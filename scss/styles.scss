@@ -2,6 +2,51 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: $font-family-base;
+}
+
+// B: BODY SECTION
+
+body {
+  background: linear-gradient(to bottom, $gcolor-3, $gcolor-2, $gcolor-1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+// B: FOOTER SECTION
+
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $gcolor-1;
+  color: #fff;
+  padding: 4rem 0;
+  font-size: 3.5rem;
+  border-top: $gcolor-3 1px solid;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: $font-family-headline;
+    cursor: pointer;
+  }
+
+  .icons {
+    font-size: 3.5rem;
+  }
+
+  a:hover {
+    color: $color-1;
+  }
 }
 // ------------------Header---------------------------------------
 header {
