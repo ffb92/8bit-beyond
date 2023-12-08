@@ -16,38 +16,6 @@ body {
   min-height: 100vh;
 }
 
-// B: FOOTER SECTION
-
-footer {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: $gcolor-1;
-  color: #fff;
-  padding: 4rem 0;
-  font-size: 3.5rem;
-  border-top: $gcolor-3 1px solid;
-
-  a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 3rem;
-    font-family: $font-family-headline;
-    cursor: pointer;
-  }
-
-  .icons {
-    font-size: 3.5rem;
-  }
-
-  a:hover {
-    color: $color-1;
-  }
-}
 // ------------------Header---------------------------------------
 header {
   position: fixed;
@@ -60,6 +28,7 @@ header {
   justify-content: space-between;
   z-index: 100;
 }
+
 // ---------------------Logo-------------------------------------
 .logo {
   text-decoration: none;
@@ -169,6 +138,59 @@ h1 {
   z-index: 10;
 }
 
+// B: FOOTER SECTION
+
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $gcolor-1;
+  color: #fff;
+  padding: 0 3rem 1.5rem 3rem;
+  border-top: $gcolor-3 1px solid;
+
+  .imprint a {
+    font-size: 2.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: $font-family-headline;
+    cursor: pointer;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons a {
+    font-size: 6rem;
+    color: #fff;
+    margin: 0 1rem;
+  }
+
+  .copyright {
+    font-size: 2rem;
+  }
+
+  .imprint {
+    margin: 0 0 1rem 0;
+  }
+
+  .imprint a:hover,
+  .icons a:nth-child(odd):hover {
+    color: $color-1;
+  }
+
+  .icons a:nth-child(even):hover {
+    color: $color-2;
+  }
+}
+
 // -----------------------Responsive-------------------------------
 @media (min-width: 768px) {
   #menu-btn {
@@ -178,3 +200,28 @@ h1 {
     display: block;
   }
 }
+    // B:FOOTER RESPONSIVE
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .icons:nth-child(1) {
+    order: 2;
+    width: 50%;
+  }
+
+  .imprint:nth-child(2) {
+    order: 3;
+    width: 25%;
+  }
+
+  .copyright:nth-child(3) {
+    order: 1;
+    width: 25%;
+  }
+
+  .imprint {
+    display: flex;
+    justify-content: flex-end;
+  }
