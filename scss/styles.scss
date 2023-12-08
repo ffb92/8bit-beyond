@@ -6,16 +6,6 @@
   font-family: $font-family-base;
 }
 
-// B: BODY SECTION
-
-body {
-  background: linear-gradient(to bottom, $gcolor-3, $gcolor-2, $gcolor-1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-
 // ------------------Header---------------------------------------
 header {
   position: fixed;
@@ -61,7 +51,6 @@ header {
 }
 
 // ---------Mobile-Icon------
-
 #menu-btn ul {
   display: none;
   list-style: none;
@@ -98,7 +87,6 @@ header {
     transform: scaleY(1);
   }
 }
-
 // ---------------------Desktop-----------------------------------
 nav {
   display: none;
@@ -120,6 +108,7 @@ nav {
     }
   }
 }
+
 // -----------------Background Main ------------------------------
 
 .container-bg img {
@@ -138,6 +127,52 @@ h1 {
   z-index: 10;
 }
 
+// B: MAIN SECTION
+
+main {
+  background: linear-gradient(to bottom, $gcolor-3, $gcolor-2, $gcolor-1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0 1rem;
+  padding-bottom: 16rem; //Muss noch an den Footer angepasst werden
+}
+
+.container {
+  height: 100vh;
+  padding-top: 7rem; //Muss noch an den Header angepasst werden
+  display: grid;
+  gap: 1rem;
+  grid: 1fr 1fr 1fr;
+  grid-template-areas:
+    "content-1 content-1 content-1"
+    "content-2 content-2 content-3"
+    "content-5 content-4 content-4";
+
+  section,
+  aside {
+    height: 100%;
+    border: 2px solid rgba(128, 128, 128, 0.289);
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+    border-radius: 5px;
+  }
+
+  .content-1 {
+    grid-area: content-1;
+  }
+  .content-2 {
+    grid-area: content-2;
+  }
+  .content-3 {
+    grid-area: content-3;
+  }
+  .content-4 {
+    grid-area: content-4;
+  }
+  .content-5 {
+    grid-area: content-5;
+  }
+  
 // B: FOOTER SECTION
 
 footer {
@@ -163,6 +198,7 @@ footer {
   }
 
   .icons {
+
     display: flex;
     justify-content: center;
   }

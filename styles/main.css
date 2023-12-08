@@ -6,15 +6,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-
-
 header {
   position: fixed;
   background-color: #0f2027;
@@ -164,6 +155,74 @@ footer .icons a:nth-child(odd):hover {
 }
 footer .icons a:nth-child(even):hover {
   color: #056cf2;
+}
+
+main {
+  background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0 1rem;
+  padding-bottom: 16rem;
+}
+
+.container {
+  height: 100vh;
+  padding-top: 7rem;
+  display: grid;
+  gap: 1rem;
+  grid: 1fr 1fr 1fr;
+  grid-template-areas: "content-1 content-1 content-1" "content-2 content-2 content-3" "content-5 content-4 content-4";
+}
+.container section,
+.container aside {
+  height: 100%;
+  border: 2px solid rgba(128, 128, 128, 0.289);
+  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+  border-radius: 5px;
+}
+.container .content-1 {
+  grid-area: content-1;
+}
+.container .content-2 {
+  grid-area: content-2;
+}
+.container .content-3 {
+  grid-area: content-3;
+}
+.container .content-4 {
+  grid-area: content-4;
+}
+.container .content-5 {
+  grid-area: content-5;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #0f2027;
+  color: #fff;
+  padding: 4rem 0;
+  font-size: 3.5rem;
+  border-top: #2c5364 1px solid;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: "Roboto Slab", serif;
+  cursor: pointer;
+}
+footer .icons {
+  font-size: 3.5rem;
+}
+footer a:hover {
+  color: #bf2c53;
 }
 
 @media (min-width: 768px) {
