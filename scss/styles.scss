@@ -54,74 +54,127 @@ header {
   background-color: $gcolor-1;
   width: 100%;
   top: 0;
-  padding: 0.625em;
+  left: 0;
+  padding: 2.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  z-index: 100;
 }
 // ---------------------Logo-------------------------------------
 .logo {
   text-decoration: none;
   font-size: 1.5rem;
   color: #fff;
-
 }
 // ----------------------Mobile ---------------------------------
-.mobile-icon i {
-    font-size: 1.5rem;
-    color: #fff;
-    cursor: pointer;
-
-    a {
-      color: #fff;
-      font-family: $font-family-base;
-    }
+.mobile-drop i {
+  font-size: 3.5rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 620px;
+  ul {
+    
     
   }
+  li {
+    display: flex;
+    justify-content: center;
+    margin-right: 1400px;
+  
+  }
+
+  a {
+    color: #fff;
+    font-family: $font-family-headline;
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+}
 
 // ---------Mobile-Icon------
-  #menu-btn {
-    display: relative;
+
+#menu-btn ul {
+  display: none;
+  list-style: none;
+  padding: 1.2em;
   
-    ul {
-      display: none;
-      list-style: none;
-      padding: 1em;
-    }
-    a {
-      text-decoration: none;
-      
-    }
+  animation: growDown 500ms ease-in-out forwards;
+  a {
+    text-decoration: none;
   }
-  #menu-btn:hover ul {
-    display: block;
+}
+#menu-btn:hover {
+  color: $color-1;
+  ul {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em;
   }
+  a:hover {
+    color: $color-5;
+  }
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 // ---------------------Desktop-----------------------------------
 nav {
   display: none;
 
   ul {
     display: flex;
-    padding: 1rem;
+    justify-content: space-evenly;
+    width: 100%;
 
     li {
       list-style: none;
     }
     a {
       text-decoration: none;
-      font-size: 1.4rem;
-      margin: 0 1rem;
+      font-size: 3rem;
       color: #fff;
-      font-family: $font-family-base;
+      margin: 2rem;
+      font-family: $font-family-headline;
     }
   }
 }
+// -----------------Background Main ------------------------------
+
+.container-bg img {
+  margin-top: 80px;
+  position: relative;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: "Silkscreen", sans-serif;
+  color: $gcolor-1;
+  text-shadow: 5px 5px 10px $gcolor-3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+}
+
 // -----------------------Responsive-------------------------------
 @media (min-width: 768px) {
   #menu-btn {
     display: none;
   }
-    nav {
-      display: block;
-    }
+  nav {
+    display: block;
+  }
 }
