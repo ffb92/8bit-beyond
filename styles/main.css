@@ -11,10 +11,11 @@ header {
   background-color: #0f2027;
   width: 100%;
   top: 0;
-  padding: 0.625em;
+  left: 0;
+  padding: 2.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  z-index: 100;
 }
 
 .logo {
@@ -23,48 +24,137 @@ header {
   color: #fff;
 }
 
-.mobile-icon i {
-  font-size: 1.5rem;
+.mobile-drop i {
+  font-size: 3.5rem;
   color: #fff;
   cursor: pointer;
+  margin-left: 620px;
 }
-.mobile-icon i a {
+.mobile-drop i li {
+  display: flex;
+  justify-content: center;
+  margin-right: 1400px;
+}
+.mobile-drop i a {
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-size: 2.5rem;
+  padding: 1rem;
 }
 
-#menu-btn {
-  display: relative;
-}
 #menu-btn ul {
   display: none;
   list-style: none;
-  padding: 1em;
+  padding: 1.2em;
+  animation: growDown 500ms ease-in-out forwards;
 }
-#menu-btn a {
+#menu-btn ul a {
   text-decoration: none;
 }
 
+#menu-btn:hover {
+  color: #bf2c53;
+}
 #menu-btn:hover ul {
-  display: block;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2em;
+}
+#menu-btn:hover a:hover {
+  color: #04bf68;
 }
 
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 nav {
   display: none;
 }
 nav ul {
   display: flex;
-  padding: 1rem;
+  justify-content: space-evenly;
+  width: 100%;
 }
 nav ul li {
   list-style: none;
 }
 nav ul a {
   text-decoration: none;
-  font-size: 1.4rem;
-  margin: 0 1rem;
+  font-size: 3rem;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  margin: 2rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.container-bg img {
+  margin-top: 80px;
+  position: relative;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: "Silkscreen", sans-serif;
+  color: #0f2027;
+  text-shadow: 5px 5px 10px #2c5364;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0f2027;
+  color: #fff;
+  padding: 0 3rem 1.5rem 3rem;
+  border-top: #2c5364 1px solid;
+}
+footer .imprint a {
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Roboto Slab", serif;
+  cursor: pointer;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+}
+footer .icons a {
+  font-size: 6rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+footer .copyright {
+  font-size: 2rem;
+}
+footer .imprint {
+  margin: 0 0 1rem 0;
+}
+footer .imprint a:hover,
+footer .icons a:nth-child(odd):hover {
+  color: #bf2c53;
+}
+footer .icons a:nth-child(even):hover {
+  color: #056cf2;
 }
 
 main {
@@ -141,6 +231,26 @@ footer a:hover {
   }
   nav {
     display: block;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .icons:nth-child(1) {
+    order: 2;
+    width: 50%;
+  }
+  .imprint:nth-child(2) {
+    order: 3;
+    width: 25%;
+  }
+  .copyright:nth-child(3) {
+    order: 1;
+    width: 25%;
+  }
+  .imprint {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
