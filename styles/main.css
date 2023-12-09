@@ -147,6 +147,49 @@ main {
   grid-area: content-5;
 }
 
+<<<<<<< HEAD
+=======
+main {
+  background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0 1rem;
+  padding-bottom: 16rem;
+}
+
+.container {
+  height: 100vh;
+  padding-top: 7rem;
+  display: grid;
+  gap: 1rem;
+  grid: 1fr 1fr 1fr;
+  grid-template-areas: "content-1 content-1 content-1" "content-2 content-2 content-3" "content-5 content-4 content-4";
+}
+.container section,
+.container aside {
+  height: 100%;
+  border: 2px solid rgba(128, 128, 128, 0.289);
+  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+  border-radius: 5px;
+}
+.container .content-1 {
+  grid-area: content-1;
+}
+.container .content-2 {
+  grid-area: content-2;
+}
+.container .content-3 {
+  grid-area: content-3;
+}
+.container .content-4 {
+  grid-area: content-4;
+}
+.container .content-5 {
+  grid-area: content-5;
+}
+
+>>>>>>> a7906a7a969f91581f631bb471ea9cb6600abc6a
 footer {
   width: 100%;
   position: fixed;
