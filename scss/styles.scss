@@ -31,15 +31,11 @@ header {
   color: #fff;
   cursor: pointer;
   margin-left: 620px;
-  ul {
-    
-    
-  }
+
   li {
     display: flex;
     justify-content: center;
     margin-right: 1400px;
-  
   }
 
   a {
@@ -55,7 +51,7 @@ header {
   display: none;
   list-style: none;
   padding: 1.2em;
-  
+
   animation: growDown 500ms ease-in-out forwards;
   a {
     text-decoration: none;
@@ -172,7 +168,8 @@ main {
   .content-5 {
     grid-area: content-5;
   }
-  
+}
+
 // B: FOOTER SECTION
 
 footer {
@@ -198,7 +195,6 @@ footer {
   }
 
   .icons {
-
     display: flex;
     justify-content: center;
   }
@@ -236,28 +232,28 @@ footer {
     display: block;
   }
 }
-    // B:FOOTER RESPONSIVE
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
+// B:FOOTER RESPONSIVE
+footer {
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .icons:nth-child(1) {
-    order: 2;
-    width: 50%;
-  }
+.icons:nth-child(1) {
+  order: 2;
+  width: 50%;
+}
 
-  .imprint:nth-child(2) {
-    order: 3;
-    width: 25%;
-  }
+.imprint:nth-child(2) {
+  order: 3;
+  width: 25%;
+}
 
-  .copyright:nth-child(3) {
-    order: 1;
-    width: 25%;
-  }
+.copyright:nth-child(3) {
+  order: 1;
+  width: 25%;
+}
 
-  .imprint {
-    display: flex;
-    justify-content: flex-end;
-  }
+.imprint {
+  display: flex;
+  justify-content: flex-end;
+}

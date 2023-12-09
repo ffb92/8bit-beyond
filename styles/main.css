@@ -113,50 +113,6 @@ h1 {
   z-index: 10;
 }
 
-footer {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #0f2027;
-  color: #fff;
-  padding: 0 3rem 1.5rem 3rem;
-  border-top: #2c5364 1px solid;
-}
-footer .imprint a {
-  font-size: 2.5rem;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Roboto Slab", serif;
-  cursor: pointer;
-}
-footer .icons {
-  display: flex;
-  justify-content: center;
-}
-footer .icons a {
-  font-size: 6rem;
-  color: #fff;
-  margin: 0 1rem;
-}
-footer .copyright {
-  font-size: 2rem;
-}
-footer .imprint {
-  margin: 0 0 1rem 0;
-}
-footer .imprint a:hover,
-footer .icons a:nth-child(odd):hover {
-  color: #bf2c53;
-}
-footer .icons a:nth-child(even):hover {
-  color: #056cf2;
-}
-
 main {
   background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
   background-size: cover;
@@ -203,26 +159,42 @@ footer {
   left: 0;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #0f2027;
   color: #fff;
-  padding: 4rem 0;
-  font-size: 3.5rem;
+  padding: 0 3rem 1.5rem 3rem;
   border-top: #2c5364 1px solid;
 }
-footer a {
+footer .imprint a {
+  font-size: 2.5rem;
   color: #fff;
   text-decoration: none;
-  font-size: 3rem;
   font-family: "Roboto Slab", serif;
   cursor: pointer;
 }
 footer .icons {
-  font-size: 3.5rem;
+  display: flex;
+  justify-content: center;
 }
-footer a:hover {
+footer .icons a {
+  font-size: 6rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+footer .copyright {
+  font-size: 2rem;
+}
+footer .imprint {
+  margin: 0 0 1rem 0;
+}
+footer .imprint a:hover,
+footer .icons a:nth-child(odd):hover {
   color: #bf2c53;
+}
+footer .icons a:nth-child(even):hover {
+  color: #056cf2;
 }
 
 @media (min-width: 768px) {
@@ -232,26 +204,30 @@ footer a:hover {
   nav {
     display: block;
   }
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .icons:nth-child(1) {
-    order: 2;
-    width: 50%;
-  }
-  .imprint:nth-child(2) {
-    order: 3;
-    width: 25%;
-  }
-  .copyright:nth-child(3) {
-    order: 1;
-    width: 25%;
-  }
-  .imprint {
-    display: flex;
-    justify-content: flex-end;
-  }
+}
+footer {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.icons:nth-child(1) {
+  order: 2;
+  width: 50%;
+}
+
+.imprint:nth-child(2) {
+  order: 3;
+  width: 25%;
+}
+
+.copyright:nth-child(3) {
+  order: 1;
+  width: 25%;
+}
+
+.imprint {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=main.css.map */
