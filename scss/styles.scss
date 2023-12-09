@@ -31,15 +31,11 @@ header {
   color: #fff;
   cursor: pointer;
   margin-left: 620px;
-  ul {
-    
-    
-  }
+
   li {
     display: flex;
     justify-content: center;
     margin-right: 1400px;
-  
   }
 
   a {
@@ -55,7 +51,7 @@ header {
   display: none;
   list-style: none;
   padding: 1.2em;
-  
+
   animation: growDown 500ms ease-in-out forwards;
   a {
     text-decoration: none;
@@ -109,31 +105,27 @@ nav {
   }
 }
 
-// -----------------Background Main ------------------------------
+// -----------------BackgroundImage ------------------------------
 
-.container-bg img {
+.background-image {
   margin-top: 80px;
-  position: relative;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
 
-h1 {
-  font-size: 7rem;
-  font-family: "Silkscreen", sans-serif;
-  color: $gcolor-1;
-  text-shadow: 5px 5px 10px $gcolor-3;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 10;
-}
-
+// -----------------Background Main ------------------------------
 // B: MAIN SECTION
 
 main {
   background: linear-gradient(to bottom, $gcolor-3, $gcolor-2, $gcolor-1);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+
+  width: 100%;
   padding: 0 1rem;
   padding-bottom: 16rem; //Muss noch an den Footer angepasst werden
 }
@@ -172,7 +164,7 @@ main {
   .content-5 {
     grid-area: content-5;
   }
-  
+}
 // B: FOOTER SECTION
 
 footer {
@@ -198,7 +190,6 @@ footer {
   }
 
   .icons {
-
     display: flex;
     justify-content: center;
   }
@@ -235,8 +226,8 @@ footer {
   nav {
     display: block;
   }
-}
-    // B:FOOTER RESPONSIVE
+
+  // B:FOOTER RESPONSIVE
   footer {
     flex-direction: row;
     justify-content: space-between;
@@ -261,3 +252,4 @@ footer {
     display: flex;
     justify-content: flex-end;
   }
+}
