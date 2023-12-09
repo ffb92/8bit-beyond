@@ -204,30 +204,26 @@ footer .icons a:nth-child(even):hover {
   nav {
     display: block;
   }
-}
-footer {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.icons:nth-child(1) {
-  order: 2;
-  width: 50%;
-}
-
-.imprint:nth-child(2) {
-  order: 3;
-  width: 25%;
-}
-
-.copyright:nth-child(3) {
-  order: 1;
-  width: 25%;
-}
-
-.imprint {
-  display: flex;
-  justify-content: flex-end;
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .icons:nth-child(1) {
+    order: 2;
+    width: 50%;
+  }
+  .imprint:nth-child(2) {
+    order: 3;
+    width: 25%;
+  }
+  .copyright:nth-child(3) {
+    order: 1;
+    width: 25%;
+  }
+  .imprint {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

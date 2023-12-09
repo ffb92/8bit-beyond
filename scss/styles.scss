@@ -231,29 +231,30 @@ footer {
   nav {
     display: block;
   }
-}
-// B:FOOTER RESPONSIVE
-footer {
-  flex-direction: row;
-  justify-content: space-between;
-}
 
-.icons:nth-child(1) {
-  order: 2;
-  width: 50%;
-}
+  // B:FOOTER RESPONSIVE
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-.imprint:nth-child(2) {
-  order: 3;
-  width: 25%;
-}
+  .icons:nth-child(1) {
+    order: 2;
+    width: 50%;
+  }
 
-.copyright:nth-child(3) {
-  order: 1;
-  width: 25%;
-}
+  .imprint:nth-child(2) {
+    order: 3;
+    width: 25%;
+  }
 
-.imprint {
-  display: flex;
-  justify-content: flex-end;
+  .copyright:nth-child(3) {
+    order: 1;
+    width: 25%;
+  }
+
+  .imprint {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
