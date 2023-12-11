@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.8666666667);
 }
 
 header {
@@ -16,6 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 100;
+  box-shadow: 5px 5px 20px #0f2027;
 }
 
 .logo i {
@@ -26,7 +28,6 @@ header {
 
 .mobile-drop i {
   font-size: 3.5rem;
-  color: #fff;
   cursor: pointer;
 }
 .mobile-drop i li {
@@ -34,7 +35,6 @@ header {
   justify-content: center;
 }
 .mobile-drop i a {
-  color: #fff;
   font-family: "Roboto Slab", serif;
   font-size: 2.5rem;
   padding: 1rem;
@@ -89,7 +89,6 @@ nav ul li {
 nav ul a {
   text-decoration: none;
   font-size: 3rem;
-  color: #fff;
   margin: 2rem;
   font-family: "Roboto Slab", serif;
 }
@@ -125,22 +124,76 @@ main {
   grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
   grid-template-areas: "content-1 content-1 content-1" "content-2 content-2 content-3" "content-5 content-4 content-4";
 }
-.container section, .container aside {
+.container section {
   border: 2px solid rgba(128, 128, 128, 0.289);
   box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
-  border-radius: 5px;
+  border-radius: 15px;
+}
+.container aside {
+  border: 2px solid rgba(128, 128, 128, 0.289);
+  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container aside img {
+  width: 95%;
+  height: 95%;
 }
 .container .content-1 {
   grid-area: content-1;
 }
+.container .content-1 h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem;
+  color: #04bf68;
+}
+.container .content-1 h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+}
+.container .content-1 p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
 .container .content-2 {
   grid-area: content-2;
+}
+.container .content-2 h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+.container .content-2 p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
 }
 .container .content-3 {
   grid-area: content-3;
 }
 .container .content-4 {
   grid-area: content-4;
+}
+.container .content-4 h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem;
+}
+.container .content-4 p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+  padding: 0 1rem;
 }
 .container .content-5 {
   grid-area: content-5;
@@ -156,13 +209,11 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   background-color: #0f2027;
-  color: #fff;
   padding: 0 4rem 1.5rem 3rem;
   box-shadow: 5px 5px 20px #2c5364;
 }
 footer .imprint a {
   font-size: 2.5rem;
-  color: #fff;
   text-decoration: none;
   font-family: "Roboto Slab", serif;
   cursor: pointer;
@@ -173,8 +224,8 @@ footer .icons {
 }
 footer .icons a {
   font-size: 6rem;
-  color: #fff;
   margin: 0 1rem;
+  color: #f2b33d;
 }
 footer .copyright {
   font-size: 2rem;
@@ -183,10 +234,12 @@ footer .imprint {
   margin: 0 0 1rem 0;
 }
 footer .imprint a:hover,
-footer .icons a:nth-child(odd):hover {
+footer .icons a .fa-instagram:hover,
+footer .icons a .fa-youtube:hover {
   color: #bf2c53;
 }
-footer .icons a:nth-child(even):hover {
+footer .icons a .fa-twitter:hover,
+footer .icons a .fa-linkedin:hover {
   color: #056cf2;
 }
 
@@ -198,13 +251,24 @@ footer .icons a:nth-child(even):hover {
     display: block;
   }
   main {
-    padding-bottom: 25rem;
+    padding: 5rem 10rem 15rem 10rem;
   }
   main .container {
     padding-top: 7rem;
-  }
-  .container {
     grid-template-rows: 40rem 40rem 40rem;
+  }
+  main .container .content-1 h1 {
+    font-size: 4rem;
+  }
+  main .container .content-1 h3 {
+    font-size: 2.5rem;
+  }
+  main .container .content-1 p {
+    font-size: 2rem;
+  }
+  main .container .content-2 p,
+  main .container .content-4 p {
+    font-size: 2rem;
   }
   footer {
     flex-direction: row;

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: $font-family-base;
+  color: $color-p;
 }
 
 // ------------------Header---------------------------------------
@@ -17,6 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   z-index: 100;
+  box-shadow: 5px 5px 20px $gcolor-1;
 }
 
 // ---------------------Logo-------------------------------------
@@ -28,7 +30,6 @@ header {
 // ----------------------Mobile ---------------------------------
 .mobile-drop i {
   font-size: 3.5rem;
-  color: #fff;
   cursor: pointer;
 
   li {
@@ -36,7 +37,6 @@ header {
     justify-content: center;
   }
   a {
-    color: #fff;
     font-family: $font-family-headline;
     font-size: 2.5rem;
     padding: 1rem;
@@ -62,14 +62,12 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-   
   }
- 
+
   a:hover {
     color: $color-5;
   }
 }
-
 
 @keyframes growDown {
   0% {
@@ -97,7 +95,6 @@ nav {
     a {
       text-decoration: none;
       font-size: 3rem;
-      color: #fff;
       margin: 2rem;
       font-family: $font-family-headline;
     }
@@ -137,29 +134,95 @@ main {
   gap: 1rem;
   grid: 1fr 1fr 1fr;
   grid-template-rows: 30rem 30rem 30rem;
-  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px,1fr);
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(
+      100px,
+      1fr
+    );
   grid-template-areas:
     "content-1 content-1 content-1"
     "content-2 content-2 content-3"
     "content-5 content-4 content-4";
 
-section, aside {
+  section {
     border: 2px solid rgba(128, 128, 128, 0.289);
     box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
-    border-radius: 5px;
+    border-radius: 15px;
+  }
+
+  aside {
+    border: 2px solid rgba(128, 128, 128, 0.289);
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside img {
+    width: 95%;
+    height: 95%;
   }
 
   .content-1 {
     grid-area: content-1;
+
+    h1 {
+      font-family: $font-family-headline;
+      font-size: 3rem;
+      text-align: center;
+      margin: 2rem;
+      color: $color-5;
+    }
+
+    h3 {
+      font-family: $font-family-headline;
+      font-size: 2rem;
+      text-align: center;
+      margin: 2rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 1rem;
+    }
   }
   .content-2 {
     grid-area: content-2;
+
+    h2 {
+      font-family: $font-family-headline;
+      font-size: 3rem;
+      text-align: center;
+      margin: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 1rem;
+      padding: 1rem;
+    }
   }
   .content-3 {
     grid-area: content-3;
   }
   .content-4 {
     grid-area: content-4;
+
+    h2 {
+      font-family: $font-family-headline;
+      font-size: 3rem;
+      text-align: center;
+      margin: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 1rem;
+      padding: 0 1rem;
+    }
   }
   .content-5 {
     grid-area: content-5;
@@ -177,14 +240,11 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   background-color: $gcolor-1;
-  color: #fff;
   padding: 0 4rem 1.5rem 3rem;
-  box-shadow: 5px 5px 20px $gcolor-3; 
- 
+  box-shadow: 5px 5px 20px $gcolor-3;
 
   .imprint a {
     font-size: 2.5rem;
-    color: #fff;
     text-decoration: none;
     font-family: $font-family-headline;
     cursor: pointer;
@@ -197,8 +257,8 @@ footer {
 
   .icons a {
     font-size: 6rem;
-    color: #fff;
     margin: 0 1rem;
+    color: $color-4;
   }
 
   .copyright {
@@ -210,11 +270,13 @@ footer {
   }
 
   .imprint a:hover,
-  .icons a:nth-child(odd):hover {
+  .icons a .fa-instagram:hover,
+  .icons a .fa-youtube:hover {
     color: $color-1;
   }
 
-  .icons a:nth-child(even):hover {
+  .icons a .fa-twitter:hover,
+  .icons a .fa-linkedin:hover {
     color: $color-2;
   }
 }
@@ -228,21 +290,34 @@ footer {
     display: block;
   }
 
-
   // Main Responsive
   main {
-    padding-bottom: 25rem;
+    padding: 5rem 10rem 15rem 10rem;
 
     .container {
       padding-top: 7rem;
-      
+      grid-template-rows: 40rem 40rem 40rem;
+
+      .content-1 {
+        h1 {
+          font-size: 4rem;
+        }
+
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+
+      .content-2 p,
+      .content-4 p {
+        font-size: 2rem;
+      }
     }
   }
-  .container {
-    grid-template-rows: 40rem 40rem 40rem;
-  }
-
-    
 
   // B:FOOTER RESPONSIVE
   footer {
