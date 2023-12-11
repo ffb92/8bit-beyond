@@ -59,11 +59,12 @@ header {
   flex-direction: column;
   align-items: flex-end;
   ul {
-    width: 650px;
     display: flex;
     flex-direction: column;
-    
+    align-items: flex-end;
+   
   }
+ 
   a:hover {
     color: $color-5;
   }
@@ -126,8 +127,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 0 3rem;
-  padding-bottom: 20rem; //Muss noch an den Footer angepasst werden
+  padding: 0 1rem;
 }
 
 .container {
@@ -136,15 +136,14 @@ main {
   display: grid;
   gap: 1rem;
   grid: 1fr 1fr 1fr;
+  grid-template-rows: 30rem 30rem 30rem;
   grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px,1fr);
   grid-template-areas:
     "content-1 content-1 content-1"
     "content-2 content-2 content-3"
     "content-5 content-4 content-4";
 
-section,
-  aside {
-    height: 40rem;
+section, aside {
     border: 2px solid rgba(128, 128, 128, 0.289);
     box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
     border-radius: 5px;
@@ -228,6 +227,22 @@ footer {
   nav {
     display: block;
   }
+
+
+  // Main Responsive
+  main {
+    padding-bottom: 25rem;
+
+    .container {
+      padding-top: 7rem;
+      
+    }
+  }
+  .container {
+    grid-template-rows: 40rem 40rem 40rem;
+  }
+
+    
 
   // B:FOOTER RESPONSIVE
   footer {

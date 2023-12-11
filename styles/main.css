@@ -56,9 +56,9 @@ header {
   align-items: flex-end;
 }
 #menu-btn:hover ul {
-  width: 650px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 #menu-btn:hover a:hover {
   color: #04bf68;
@@ -112,8 +112,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 0 3rem;
-  padding-bottom: 20rem;
+  padding: 0 1rem;
 }
 
 .container {
@@ -122,12 +121,11 @@ main {
   display: grid;
   gap: 1rem;
   grid: 1fr 1fr 1fr;
+  grid-template-rows: 30rem 30rem 30rem;
   grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
   grid-template-areas: "content-1 content-1 content-1" "content-2 content-2 content-3" "content-5 content-4 content-4";
 }
-.container section,
-.container aside {
-  height: 40rem;
+.container section, .container aside {
   border: 2px solid rgba(128, 128, 128, 0.289);
   box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
   border-radius: 5px;
@@ -198,6 +196,15 @@ footer .icons a:nth-child(even):hover {
   }
   nav {
     display: block;
+  }
+  main {
+    padding-bottom: 25rem;
+  }
+  main .container {
+    padding-top: 7rem;
+  }
+  .container {
+    grid-template-rows: 40rem 40rem 40rem;
   }
   footer {
     flex-direction: row;
