@@ -11,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^3.4.1",
+    "jquery": "^3.7.1",
     "sass": "^1.69.5"
   }
 }

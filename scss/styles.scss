@@ -20,24 +20,21 @@ header {
 }
 
 // ---------------------Logo-------------------------------------
-.logo {
+.logo i {
   text-decoration: none;
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 5rem;
+  color: $color-4;
 }
 // ----------------------Mobile ---------------------------------
 .mobile-drop i {
   font-size: 3.5rem;
   color: #fff;
   cursor: pointer;
-  margin-left: 620px;
 
   li {
     display: flex;
     justify-content: center;
-    margin-right: 1400px;
   }
-
   a {
     color: #fff;
     font-family: $font-family-headline;
@@ -50,27 +47,28 @@ header {
 #menu-btn ul {
   display: none;
   list-style: none;
-  padding: 1.2em;
-
   animation: growDown 500ms ease-in-out forwards;
   a {
     text-decoration: none;
   }
 }
+
 #menu-btn:hover {
   color: $color-1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   ul {
-    width: 800px;
+    width: 650px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1.2em;
+    
   }
   a:hover {
     color: $color-5;
   }
 }
+
 
 @keyframes growDown {
   0% {
@@ -101,6 +99,9 @@ nav {
       color: #fff;
       margin: 2rem;
       font-family: $font-family-headline;
+    }
+    a:hover {
+      color: $color-2;
     }
   }
 }
@@ -141,7 +142,7 @@ main {
     "content-2 content-2 content-3"
     "content-5 content-4 content-4";
 
-  section,
+section,
   aside {
     height: 100%;
     border: 2px solid rgba(128, 128, 128, 0.289);
