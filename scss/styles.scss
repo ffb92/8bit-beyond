@@ -374,6 +374,44 @@ main {
   }
 }
 
+// Imprint
+
+.container-imprint {
+  width: 80%;
+  height: 100vh;
+  margin-top: 100px;
+  padding: 3rem;
+  line-height: 1.5;
+
+.contact-imprint {
+  padding-bottom: 2rem;
+}
+.haftung {
+  padding-bottom: 2rem;
+}
+.extern {
+  padding-bottom: 2rem;
+}
+  h2 {
+    font-size: 4rem;
+    color: $color-3;
+    font-family: $font-family-headline;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  span {
+    text-decoration: underline;
+    font-size: 2.5rem;
+  }
+p i {
+  font-size: 20px;
+}
+}
+
 // B: FOOTER SECTION
 
 footer {
