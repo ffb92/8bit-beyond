@@ -184,7 +184,6 @@ main {
 
   .content-1 {
     grid-area: content-1;
-    
 
     h1 {
       font-family: $font-family-headline;
@@ -219,7 +218,6 @@ main {
 
   .content-5 {
     grid-area: content-5;
-    
   }
 
   .content-6 {
@@ -293,7 +291,7 @@ main {
     }
 
     p {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: center;
       margin: 1rem;
       padding: 1rem;
@@ -668,7 +666,11 @@ footer {
       }
 
       .content-2 p,
-      .content-4 p {
+      .content-4 p,
+      .content-6 p,
+      .content-8 p,
+      .content-10 p,
+      .content-12 p {
         font-size: 2rem;
       }
     }

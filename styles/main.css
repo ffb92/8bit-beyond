@@ -241,7 +241,7 @@ main {
   margin: 1rem;
 }
 .container-side section p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 1rem;
   padding: 1rem;
@@ -557,7 +557,11 @@ footer .icons a .fa-linkedin:hover {
     font-size: 2rem;
   }
   main .container-side .content-2 p,
-  main .container-side .content-4 p {
+  main .container-side .content-4 p,
+  main .container-side .content-6 p,
+  main .container-side .content-8 p,
+  main .container-side .content-10 p,
+  main .container-side .content-12 p {
     font-size: 2rem;
   }
   aside img {
