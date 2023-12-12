@@ -250,7 +250,7 @@ main {
 // B: SIDE SECTION
 
 .container-side {
-  height: 100;
+  height: 100%;
   display: grid;
   padding-top: 10rem;
   gap: 1rem;
@@ -374,6 +374,7 @@ main {
   }
 }
 
+
 // Imprint
 
 .container-imprint {
@@ -410,6 +411,140 @@ main {
 p i {
   font-size: 20px;
 }
+
+// B: CONTACT SECTION
+
+.container-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-family: $font-family-headline;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+    color: $color-5;
+  }
+
+  form {
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 3rem;
+    border: 2px solid rgba(128, 128, 128, 0.289);
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+    border-radius: 5px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: $gcolor-2;
+  }
+
+  select option {
+    color: $gcolor-2;
+  }
+
+  input[type="submit"] {
+    background-color: $color-5;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+
+  input[type="submit"]:hover {
+    background-color: darken($color: $color-5, $amount: 10);
+  }
+
+  .data-protection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 20px 0;
+    padding: 2rem;
+    font-size: 3rem;
+    border: 2px solid rgba(128, 128, 128, 0.289);
+    box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+    border-radius: 5px;
+  }
+
+  .toggle {
+    display: inline-block;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+
+  .input {
+    display: none;
+  }
+
+  .toggle-div {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 20px;
+  }
+  .toggle-div::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    border-radius: 50%;
+  }
+
+  .input:checked + .toggle-div::after {
+    transform: translateX(20px);
+    animation: toggle 0.2s;
+  }
+
+  .input:checked + .toggle-div {
+    background-color: $color-5;
+  }
+
+  .input:not(:checked) + .toggle-div::after {
+    animation: reverse-toggle 0.2s;
+  }
+
+  @keyframes toggle {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+
+  @keyframes reverse-toggle {
+    0% {
+      transform: translateX(20px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
 }
 
 // B: FOOTER SECTION
