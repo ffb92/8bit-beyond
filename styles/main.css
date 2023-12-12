@@ -307,6 +307,27 @@ main {
   grid-area: content-13;
 }
 
+
+.container-imprint {
+  width: 80%;
+  height: 100vh;
+  margin-top: 100px;
+  padding: 3rem;
+  line-height: 1.5;
+}
+.container-imprint .contact-imprint {
+  padding-bottom: 2rem;
+}
+.container-imprint .haftung {
+  padding-bottom: 2rem;
+}
+.container-imprint .extern {
+  padding-bottom: 2rem;
+}
+.container-imprint h2 {
+  font-size: 4rem;
+  color: #44a1f2;
+
 .container-form {
   height: 100vh;
   display: flex;
@@ -315,8 +336,23 @@ main {
   align-items: center;
 }
 .container-form h2 {
+
   font-family: "Roboto Slab", serif;
+}
+.container-imprint h3 {
   font-size: 3rem;
+
+}
+.container-imprint p {
+  font-size: 2rem;
+}
+.container-imprint span {
+  text-decoration: underline;
+  font-size: 2.5rem;
+}
+.container-imprint p i {
+  font-size: 20px;
+
   text-align: center;
   margin: 1rem;
   color: #04bf68;
