@@ -211,7 +211,7 @@ main {
 }
 
 .container-side {
-  height: 100;
+  height: 100%;
   display: grid;
   padding-top: 10rem;
   gap: 1rem;
@@ -307,101 +307,123 @@ main {
   grid-area: content-13;
 }
 
-.container-side {
-  height: 100;
-  display: grid;
-  padding-top: 10rem;
-  gap: 1rem;
-  grid: 1fr 1fr 1fr;
-  grid-template-rows: repeat(7, 30rem);
-  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
-  grid-template-areas: "content-1 content-1 content-1" "content-2 content-2 content-3" "content-5 content-4 content-4" "content-6 content-6 content-7" "content-9 content-8 content-8" "content-10 content-10 content-11" "content-13 content-12 content-12";
-}
-.container-side section {
-  border: 2px solid rgba(128, 128, 128, 0.289);
-  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
-  border-radius: 15px;
-}
-.container-side section h2 {
-  font-family: "Roboto Slab", serif;
-  font-size: 3rem;
-  text-align: center;
-  margin: 1rem;
-}
-.container-side section p {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 1rem;
-  padding: 1rem;
-}
-.container-side aside {
-  border: 2px solid rgba(128, 128, 128, 0.289);
-  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
-  border-radius: 15px;
+.container-form {
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.container-side aside img {
-  width: 95%;
-  height: 95%;
-}
-.container-side .content-1 {
-  grid-area: content-1;
-}
-.container-side .content-1 h1 {
+.container-form h2 {
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
   text-align: center;
-  margin: 2rem;
+  margin: 1rem;
   color: #04bf68;
 }
-.container-side .content-1 h3 {
-  font-family: "Roboto Slab", serif;
-  font-size: 2rem;
-  text-align: center;
+.container-form form {
   margin: 2rem;
+  padding: 2rem;
+  font-size: 3rem;
+  border: 2px solid rgba(128, 128, 128, 0.289);
+  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+  border-radius: 5px;
 }
-.container-side .content-1 p {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 1rem;
+.container-form input[type=text],
+.container-form input[type=email],
+.container-form textarea,
+.container-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #213a42;
 }
-.container-side .content-2 {
-  grid-area: content-2;
+.container-form select option {
+  color: #213a42;
 }
-.container-side .content-3 {
-  grid-area: content-3;
+.container-form input[type=submit] {
+  background-color: #04bf68;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
 }
-.container-side .content-4 {
-  grid-area: content-4;
+.container-form input[type=submit]:hover {
+  background-color: #038d4d;
 }
-.container-side .content-5 {
-  grid-area: content-5;
+.container-form .data-protection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0 20px 0;
+  padding: 2rem;
+  font-size: 3rem;
+  border: 2px solid rgba(128, 128, 128, 0.289);
+  box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
+  border-radius: 5px;
 }
-.container-side .content-6 {
-  grid-area: content-6;
+.container-form .toggle {
+  display: inline-block;
+  cursor: pointer;
+  padding-right: 20px;
 }
-.container-side .content-7 {
-  grid-area: content-7;
+.container-form .input {
+  display: none;
 }
-.container-side .content-8 {
-  grid-area: content-8;
+.container-form .toggle-div {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: grey;
+  border-radius: 20px;
 }
-.container-side .content-9 {
-  grid-area: content-9;
+.container-form .toggle-div::after {
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  border-radius: 50%;
 }
-.container-side .content-10 {
-  grid-area: content-10;
+.container-form .input:checked + .toggle-div::after {
+  transform: translateX(20px);
+  animation: toggle 0.2s;
 }
-.container-side .content-11 {
-  grid-area: content-11;
+.container-form .input:checked + .toggle-div {
+  background-color: #04bf68;
 }
-.container-side .content-12 {
-  grid-area: content-12;
+.container-form .input:not(:checked) + .toggle-div::after {
+  animation: reverse-toggle 0.2s;
 }
-.container-side .content-13 {
-  grid-area: content-13;
+@keyframes toggle {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes reverse-toggle {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
 }
 
 footer {
