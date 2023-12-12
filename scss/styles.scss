@@ -153,15 +153,13 @@ main {
     h2 {
       font-family: $font-family-headline;
       font-size: 3rem;
-      text-align: center;
       margin: 1rem;
+      text-align: center;
     }
-
     p {
       font-size: 1.5rem;
       text-align: center;
       margin: 1rem;
-      padding: 1rem;
     }
   }
 
@@ -287,14 +285,13 @@ main {
       font-family: $font-family-headline;
       font-size: 3rem;
       text-align: center;
-      margin: 1rem;
+      margin: 1.5rem;
     }
 
     p {
       font-size: 1.5rem;
       text-align: center;
       margin: 1rem;
-      padding: 1rem;
     }
   }
 
@@ -310,6 +307,9 @@ main {
   aside img {
     width: 95%;
     height: 95%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
   }
 
   .content-1 {
