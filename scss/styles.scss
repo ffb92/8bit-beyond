@@ -124,12 +124,11 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  padding: 0 1rem;
+  padding: 5rem 1rem 20rem 1rem;
 }
 
 .container {
-  height: 100vh;
-  padding-top: 7rem; //Muss noch an den Header angepasst werden
+  height: 100%;
   display: grid;
   gap: 1rem;
   grid: 1fr 1fr 1fr;
@@ -147,6 +146,20 @@ main {
     border: 2px solid rgba(128, 128, 128, 0.289);
     box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
     border-radius: 15px;
+
+    h2 {
+      font-family: $font-family-headline;
+      font-size: 3rem;
+      text-align: center;
+      margin: 1rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 1rem;
+      padding: 1rem;
+    }
   }
 
   aside {
@@ -189,45 +202,51 @@ main {
   }
   .content-2 {
     grid-area: content-2;
-
-    h2 {
-      font-family: $font-family-headline;
-      font-size: 3rem;
-      text-align: center;
-      margin: 1rem;
-    }
-
-    p {
-      font-size: 1.5rem;
-      text-align: center;
-      margin: 1rem;
-      padding: 1rem;
-    }
   }
   .content-3 {
     grid-area: content-3;
   }
   .content-4 {
     grid-area: content-4;
-
-    h2 {
-      font-family: $font-family-headline;
-      font-size: 3rem;
-      text-align: center;
-      margin: 1rem;
-    }
-
-    p {
-      font-size: 1.5rem;
-      text-align: center;
-      margin: 1rem;
-      padding: 0 1rem;
-    }
   }
+
   .content-5 {
     grid-area: content-5;
   }
+
+  .content-6 {
+    grid-area: content-6;
+  }
+
+  .content-7 {
+    grid-area: content-7;
+  }
+
+  .content-8 {
+    grid-area: content-8;
+  }
+
+  .content-9 {
+    grid-area: content-9;
+  }
+
+  .content-10 {
+    grid-area: content-10;
+  }
+
+  .content-11 {
+    grid-area: content-11;
+  }
+
+  .content-12 {
+    grid-area: content-12;
+  }
+
+  .content-13 {
+    grid-area: content-13;
+  }
 }
+
 // B: SIDE SECTION
 
 .container-side {
@@ -354,6 +373,7 @@ main {
     grid-area: content-13;
   }
 }
+
 // B: FOOTER SECTION
 
 footer {
@@ -422,7 +442,31 @@ footer {
 
     .container {
       padding-top: 7rem;
-      grid-template-rows: 40rem 40rem 40rem;
+      grid-template-rows: repeat(3, 40rem);
+
+      .content-1 {
+        h1 {
+          font-size: 4rem;
+        }
+
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 2rem;
+        }
+      }
+
+      .content-2 p,
+      .content-4 p {
+        font-size: 2rem;
+      }
+    }
+
+    .container-side {
+      padding-top: 7rem;
+      grid-template-rows: repeat(7, 40rem);
 
       .content-1 {
         h1 {
