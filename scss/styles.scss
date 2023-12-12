@@ -143,6 +143,9 @@ main {
     "content-5 content-4 content-4";
 
   section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 2px solid rgba(128, 128, 128, 0.289);
     box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
     border-radius: 15px;
@@ -174,10 +177,14 @@ main {
   aside img {
     width: 95%;
     height: 95%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
   }
 
   .content-1 {
     grid-area: content-1;
+    width: 90%;
 
     h1 {
       font-family: $font-family-headline;
@@ -212,6 +219,7 @@ main {
 
   .content-5 {
     grid-area: content-5;
+    
   }
 
   .content-6 {
@@ -270,6 +278,9 @@ main {
     "content-13 content-12 content-12";
 
   section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 2px solid rgba(128, 128, 128, 0.289);
     box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
     border-radius: 15px;
@@ -374,7 +385,6 @@ main {
   }
 }
 
-
 // Imprint
 
 .container-imprint {
@@ -385,15 +395,15 @@ main {
   line-height: 1.5;
   text-align: center;
 
-.contact-imprint {
-  padding-bottom: 2rem;
-}
-.haftung {
-  padding-bottom: 2rem;
-}
-.extern {
-  padding-bottom: 2rem;
-}
+  .contact-imprint {
+    padding-bottom: 2rem;
+  }
+  .haftung {
+    padding-bottom: 2rem;
+  }
+  .extern {
+    padding-bottom: 2rem;
+  }
   h2 {
     font-size: 4rem;
     color: $color-3;
@@ -409,9 +419,9 @@ main {
     text-decoration: underline;
     font-size: 2.5rem;
   }
-p i {
-  font-size: 20px;
-}
+  p i {
+    font-size: 20px;
+  }
 }
 // B: CONTACT SECTION
 
@@ -424,7 +434,7 @@ p i {
 
   h2 {
     font-family: $font-family-headline;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     margin: 1rem;
     color: $color-5;
@@ -663,12 +673,14 @@ footer {
       }
     }
   }
+  aside img {
+    object-fit: cover;
+  }
   // Imprint responsive
-.container-imprint {
-  text-align: left;
-  width: 70%;
-}
-
+  .container-imprint {
+    text-align: left;
+    width: 70%;
+  }
 
   // B:FOOTER RESPONSIVE
   footer {

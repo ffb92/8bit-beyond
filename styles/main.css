@@ -124,6 +124,9 @@ main {
   grid-template-areas: "content-1 content-1 content-1" "content-2 content-2 content-3" "content-5 content-4 content-4";
 }
 .container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border: 2px solid rgba(128, 128, 128, 0.289);
   box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
   border-radius: 15px;
@@ -151,9 +154,13 @@ main {
 .container aside img {
   width: 95%;
   height: 95%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
 }
 .container .content-1 {
   grid-area: content-1;
+  width: 90%;
 }
 .container .content-1 h1 {
   font-family: "Roboto Slab", serif;
@@ -221,6 +228,9 @@ main {
   grid-template-areas: "content-1 content-1 content-1" "content-2 content-2 content-3" "content-5 content-4 content-4" "content-6 content-6 content-7" "content-9 content-8 content-8" "content-10 content-10 content-11" "content-13 content-12 content-12";
 }
 .container-side section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border: 2px solid rgba(128, 128, 128, 0.289);
   box-shadow: 5px 5px 15px 15px rgba(0, 0, 0, 0.042);
   border-radius: 15px;
@@ -352,7 +362,7 @@ main {
 }
 .container-form h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   margin: 1rem;
   color: #04bf68;
@@ -550,6 +560,9 @@ footer .icons a .fa-linkedin:hover {
   main .container-side .content-2 p,
   main .container-side .content-4 p {
     font-size: 2rem;
+  }
+  aside img {
+    object-fit: cover;
   }
   .container-imprint {
     text-align: left;
