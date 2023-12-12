@@ -160,7 +160,6 @@ main {
 }
 .container .content-1 {
   grid-area: content-1;
-  width: 90%;
 }
 .container .content-1 h1 {
   font-family: "Roboto Slab", serif;
