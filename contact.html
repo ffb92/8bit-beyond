@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8Bit Beyond</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/678c733bb7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="" class="logo"><i class="fa-solid fa-mosquito"></i></a>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="anime.html">Anime</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-------------------For Mobile----------------->
+      <div class="mobile-drop">
+        <i class="fa-solid fa-bars" id="menu-btn">
+          <ul>
+            <li class="drop1"><a href="index.html">Home</a></li>
+            <li class="drop2"><a href="anime.html">Anime</a></li>
+            <li class="drop3"><a href="games.html">Games</a></li>
+            <li class="drop4"><a href="contact.html">Contact</a></li>
+          </ul>
+        </i>
+      </div>
+    </header>
+
+    <!-----------------------Main-------------------- -->
+    <main>
+      <div class="container-form">
+        <h2>Contact Us</h2>
+        <section class="contact-form">
+          <form action="https://formspree.io/f/mnqkerde" method="POST">
+            <label for="fname">Vorname:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              required
+              placeholder="Max"
+            />
+
+            <label for="lname">Nachname:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              required
+              placeholder="Mustermann"
+            />
+
+            <label for="email">E-Mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              minlength="3"
+              placeholder="m.mustermann@online.de"
+            />
+
+            <label for="theme">Thema:</label>
+            <select id="theme" name="theme">
+              <option value="question">Frage</option>
+              <option value="feedback">Feedback</option>
+              <option value="support">Anfrage</option>
+              <option value="other">Andere</option>
+            </select>
+
+            <label for="message">Nachricht:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Gib hier deinen Text ein"
+              rows="5"
+            ></textarea>
+            <div class="data-protection">
+              <label class="toggle" for="myFor">
+                <input class="input" id="myFor" type="checkbox" required />
+                <div class="toggle-div"></div>
+              </label>
+              <label for="myFor"
+                >Ich stimme den Datenschutzbestimmungen zu.</label
+              >
+            </div>
+            <input type="submit" value="Absenden" />
+          </form>
+        </section>
+      </div>
+    </main>
+    <!---------------------------Footer--------------------->
+    <footer>
+      <div class="icons">
+        <a href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a href="https://twitter.com" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://youtube.com" target="_blank">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="imprint">
+        <a href="imprint.html">Impressum</a>
+      </div>
+      <div class="copyright">
+        <p>©8Bit - Beyond - designed by Phil & Benni - since 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
