@@ -48,142 +48,65 @@
 
     <!-----------------------Main-------------------- -->
     <main>
-      <div class="container-side">
-        <section class="content-1">
-          <h1>Anime</h1>
-          <h3>
-            Dein ultimativer Treffpunkt für virtuelle Abenteuer und fesselnde
-            Geschichten!
-          </h3>
-          <p>
-            Tauche ein in unsere bunte Welt voller Pixel und Fantasie, in der
-            die Grenzen zwischen Realität und Fiktion verschwimmen. Ob du ein
-            erfahrener Gamer bist, der nach den neuesten Updates sucht, oder ein
-            Anime-Enthusiast, der auf der Suche nach neuen Serien und Filmen ist
-            - hier findest du alles, was dein Herz begehrt.
-          </p>
-          <p>Willkommen bei uns - wo Gaming und Anime zu Hause sind!</p>
+      <div class="container-form">
+        <h2>Contact Us</h2>
+        <section class="contact-form">
+          <form action="https://formspree.io/f/mnqkerde" method="POST">
+            <label for="fname">Vorname:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              required
+              placeholder="Max"
+            />
+
+            <label for="lname">Nachname:</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              required
+              placeholder="Mustermann"
+            />
+
+            <label for="email">E-Mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              minlength="3"
+              placeholder="m.mustermann@online.de"
+            />
+
+            <label for="theme">Thema:</label>
+            <select id="theme" name="theme">
+              <option value="question">Frage</option>
+              <option value="feedback">Feedback</option>
+              <option value="support">Anfrage</option>
+              <option value="other">Andere</option>
+            </select>
+
+            <label for="message">Nachricht:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Gib hier deinen Text ein"
+              rows="5"
+            ></textarea>
+            <div class="data-protection">
+              <label class="toggle" for="myFor">
+                <input class="input" id="myFor" type="checkbox" required />
+                <div class="toggle-div"></div>
+              </label>
+              <label for="myFor"
+                >Ich stimme den Datenschutzbestimmungen zu.</label
+              >
+            </div>
+            <input type="submit" value="Absenden" />
+          </form>
         </section>
-        <section class="content-2">
-          <h2>Test Headline 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            natus, porro adipisci accusamus, odio similique eaque architecto
-            pariatur officia velit ipsum odit ex! Voluptatibus cum nostrum
-            architecto dolore molestiae velit sint at fugiat. Culpa non amet
-            deserunt dicta magnam similique repudiandae dignissimos? Dicta
-            dolorem illo quaerat. Ipsum cupiditate, corporis facilis deserunt
-            voluptatum dolores quae expedita, exercitationem quos ut harum
-            recusandae error rerum quia ea numquam, officiis animi cumque ad
-            commodi excepturi quis voluptatem. Quibusdam magni eligendi tempora
-            sapiente quis cupiditate natus odit provident quia magnam, officia
-            sequi recusandae similique aspernatur impedit pariatur itaque
-            ducimus fugiat assumenda eum debitis illo saepe!
-          </p>
-        </section>
-        <aside class="content-3">
-          <img src="/images/example-pic.jpg" alt="" />
-        </aside>
-        <section class="content-4">
-          <h2>Test Headline 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            natus, porro adipisci accusamus, odio similique eaque architecto
-            pariatur officia velit ipsum odit ex! Voluptatibus cum nostrum
-            architecto dolore molestiae velit sint at fugiat. Culpa non amet
-            deserunt dicta magnam similique repudiandae dignissimos? Dicta
-            dolorem illo quaerat. Ipsum cupiditate, corporis facilis deserunt
-            voluptatum dolores quae expedita, exercitationem quos ut harum
-            recusandae error rerum quia ea numquam, officiis animi cumque ad
-            commodi excepturi quis voluptatem. Quibusdam magni eligendi tempora
-            sapiente quis cupiditate natus odit provident quia magnam, officia
-            sequi recusandae similique aspernatur impedit pariatur itaque
-            ducimus fugiat assumenda eum debitis illo saepe!
-          </p>
-        </section>
-        <aside class="content-5">
-          <img src="/images/example-pic.jpg" alt="" />
-        </aside>
-        <section class="content-6">
-          <h2>Test Headline 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            natus, porro adipisci accusamus, odio similique eaque architecto
-            pariatur officia velit ipsum odit ex! Voluptatibus cum nostrum
-            architecto dolore molestiae velit sint at fugiat. Culpa non amet
-            deserunt dicta magnam similique repudiandae dignissimos? Dicta
-            dolorem illo quaerat. Ipsum cupiditate, corporis facilis deserunt
-            voluptatum dolores quae expedita, exercitationem quos ut harum
-            recusandae error rerum quia ea numquam, officiis animi cumque ad
-            commodi excepturi quis voluptatem. Quibusdam magni eligendi tempora
-            sapiente quis cupiditate natus odit provident quia magnam, officia
-            sequi recusandae similique aspernatur impedit pariatur itaque
-            ducimus fugiat assumenda eum debitis illo saepe!
-          </p>
-        </section>
-        <aside class="content-7">
-          <img src="/images/example-pic.jpg" alt="" />
-        </aside>
-        <section class="content-8">
-          <h2>Test Headline 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            natus, porro adipisci accusamus, odio similique eaque architecto
-            pariatur officia velit ipsum odit ex! Voluptatibus cum nostrum
-            architecto dolore molestiae velit sint at fugiat. Culpa non amet
-            deserunt dicta magnam similique repudiandae dignissimos? Dicta
-            dolorem illo quaerat. Ipsum cupiditate, corporis facilis deserunt
-            voluptatum dolores quae expedita, exercitationem quos ut harum
-            recusandae error rerum quia ea numquam, officiis animi cumque ad
-            commodi excepturi quis voluptatem. Quibusdam magni eligendi tempora
-            sapiente quis cupiditate natus odit provident quia magnam, officia
-            sequi recusandae similique aspernatur impedit pariatur itaque
-            ducimus fugiat assumenda eum debitis illo saepe!
-          </p>
-        </section>
-        <aside class="content-9">
-          <img src="/images/example-pic.jpg" alt="" />
-        </aside>
-        <section class="content-10">
-          <h2>Test Headline 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            natus, porro adipisci accusamus, odio similique eaque architecto
-            pariatur officia velit ipsum odit ex! Voluptatibus cum nostrum
-            architecto dolore molestiae velit sint at fugiat. Culpa non amet
-            deserunt dicta magnam similique repudiandae dignissimos? Dicta
-            dolorem illo quaerat. Ipsum cupiditate, corporis facilis deserunt
-            voluptatum dolores quae expedita, exercitationem quos ut harum
-            recusandae error rerum quia ea numquam, officiis animi cumque ad
-            commodi excepturi quis voluptatem. Quibusdam magni eligendi tempora
-            sapiente quis cupiditate natus odit provident quia magnam, officia
-            sequi recusandae similique aspernatur impedit pariatur itaque
-            ducimus fugiat assumenda eum debitis illo saepe!
-          </p>
-        </section>
-        <aside class="content-11">
-          <img src="/images/example-pic.jpg" alt="" />
-        </aside>
-        <section class="content-12">
-          <h2>Test Headline 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            natus, porro adipisci accusamus, odio similique eaque architecto
-            pariatur officia velit ipsum odit ex! Voluptatibus cum nostrum
-            architecto dolore molestiae velit sint at fugiat. Culpa non amet
-            deserunt dicta magnam similique repudiandae dignissimos? Dicta
-            dolorem illo quaerat. Ipsum cupiditate, corporis facilis deserunt
-            voluptatum dolores quae expedita, exercitationem quos ut harum
-            recusandae error rerum quia ea numquam, officiis animi cumque ad
-            commodi excepturi quis voluptatem. Quibusdam magni eligendi tempora
-            sapiente quis cupiditate natus odit provident quia magnam, officia
-            sequi recusandae similique aspernatur impedit pariatur itaque
-            ducimus fugiat assumenda eum debitis illo saepe!
-          </p>
-        </section>
-        <aside class="content-13">
-          <img src="/images/example-pic.jpg" alt="" />
-        </aside>
       </div>
     </main>
     <!---------------------------Footer--------------------->
