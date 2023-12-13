@@ -133,7 +133,7 @@ main {
 }
 .container section h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 1rem;
   text-align: center;
 }
@@ -235,7 +235,7 @@ main {
 }
 .container-side section h2 {
   font-family: "Roboto Slab", serif;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin: 1.5rem;
 }
@@ -531,6 +531,9 @@ footer .icons a .fa-linkedin:hover {
     padding-top: 7rem;
     grid-template-rows: repeat(3, 40rem);
   }
+  main .container h2 {
+    font-size: 3rem;
+  }
   main .container .content-1 h1 {
     font-size: 4rem;
   }
@@ -547,6 +550,9 @@ footer .icons a .fa-linkedin:hover {
   main .container-side {
     padding-top: 7rem;
     grid-template-rows: repeat(7, 40rem);
+  }
+  main .container-side h2 {
+    font-size: 3rem;
   }
   main .container-side .content-1 h1 {
     font-size: 4rem;
