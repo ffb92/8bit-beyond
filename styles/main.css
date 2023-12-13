@@ -218,7 +218,7 @@ main {
 .container-side {
   height: 100%;
   display: grid;
-  padding-top: 10rem;
+  padding-top: 12rem;
   gap: 1rem;
   grid: 1fr 1fr 1fr;
   grid-template-rows: repeat(7, 30rem);
@@ -548,7 +548,7 @@ footer .icons a .fa-linkedin:hover {
     font-size: 2rem;
   }
   main .container-side {
-    padding-top: 7rem;
+    padding-top: 12rem;
     grid-template-rows: repeat(7, 40rem);
   }
   main .container-side h2 {
@@ -624,7 +624,7 @@ footer .icons a .fa-linkedin:hover {
     font-size: 2.5rem;
   }
   main .container-side {
-    padding-top: 7rem;
+    padding-top: 12rem;
     grid-template-rows: repeat(7, 50rem);
   }
   main .container-side h2 {
