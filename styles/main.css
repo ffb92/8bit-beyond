@@ -20,10 +20,8 @@ header {
   box-shadow: 5px 5px 20px #0f2027;
 }
 
-.logo i {
-  text-decoration: none;
-  font-size: 5rem;
-  color: #f2b33d;
+.logo img {
+  width: 90px;
 }
 
 .mobile-drop i {
@@ -85,6 +83,8 @@ nav ul {
 }
 nav ul li {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 nav ul a {
   text-decoration: none;
