@@ -177,7 +177,7 @@ main {
     height: 95%;
     object-fit: cover;
     object-position: center;
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   .content-1 {
@@ -309,7 +309,7 @@ main {
     height: 95%;
     object-fit: cover;
     object-position: center;
-    border-radius: 20px;
+    border-radius: 15px;
   }
 
   .content-1 {
@@ -627,7 +627,7 @@ footer {
       padding-top: 7rem;
       grid-template-rows: repeat(3, 40rem);
 
-      h2{
+      h2 {
         font-size: 3rem;
       }
 
@@ -655,7 +655,7 @@ footer {
       padding-top: 7rem;
       grid-template-rows: repeat(7, 40rem);
 
-      h2{
+      h2 {
         font-size: 3rem;
       }
 
@@ -680,6 +680,107 @@ footer {
       .content-10 p,
       .content-12 p {
         font-size: 2rem;
+      }
+    }
+  }
+  aside img {
+    object-fit: cover;
+  }
+  // Imprint responsive
+  .container-imprint {
+    text-align: left;
+    width: 70%;
+  }
+
+  // B:FOOTER RESPONSIVE
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .icons:nth-child(1) {
+    order: 2;
+    width: 50%;
+  }
+
+  .imprint:nth-child(2) {
+    order: 3;
+    width: 25%;
+  }
+
+  .copyright:nth-child(3) {
+    order: 1;
+    width: 25%;
+  }
+
+  .imprint {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1080px) {
+  // Main Responsive
+  main {
+    padding: 5rem 10rem 15rem 10rem;
+
+    .container {
+      padding-top: 7rem;
+      grid-template-rows: repeat(3, 50rem);
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      .content-1 {
+        h1 {
+          font-size: 5rem;
+        }
+
+        h3 {
+          font-size: 3.5rem;
+        }
+
+        p {
+          font-size: 2.5rem;
+        }
+      }
+
+      .content-2 p,
+      .content-4 p {
+        font-size: 2.5rem;
+      }
+    }
+
+    .container-side {
+      padding-top: 7rem;
+      grid-template-rows: repeat(7, 50rem);
+
+      h2 {
+        font-size: 4rem;
+      }
+
+      .content-1 {
+        h1 {
+          font-size: 5rem;
+        }
+
+        h3 {
+          font-size: 3.5rem;
+        }
+
+        p {
+          font-size: 2.5rem;
+        }
+      }
+
+      .content-2 p,
+      .content-4 p,
+      .content-6 p,
+      .content-8 p,
+      .content-10 p,
+      .content-12 p {
+        font-size: 2.5rem;
       }
     }
   }
