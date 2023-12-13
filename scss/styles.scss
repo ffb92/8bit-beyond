@@ -152,7 +152,7 @@ main {
 
     h2 {
       font-family: $font-family-headline;
-      font-size: 3rem;
+      font-size: 2rem;
       margin: 1rem;
       text-align: center;
     }
@@ -283,7 +283,7 @@ main {
 
     h2 {
       font-family: $font-family-headline;
-      font-size: 3rem;
+      font-size: 2rem;
       text-align: center;
       margin: 1.5rem;
     }
@@ -627,6 +627,10 @@ footer {
       padding-top: 7rem;
       grid-template-rows: repeat(3, 40rem);
 
+      h2{
+        font-size: 3rem;
+      }
+
       .content-1 {
         h1 {
           font-size: 4rem;
@@ -650,6 +654,10 @@ footer {
     .container-side {
       padding-top: 7rem;
       grid-template-rows: repeat(7, 40rem);
+
+      h2{
+        font-size: 3rem;
+      }
 
       .content-1 {
         h1 {
