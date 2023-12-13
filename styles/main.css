@@ -155,7 +155,7 @@ main {
   height: 95%;
   object-fit: cover;
   object-position: center;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .container .content-1 {
   grid-area: content-1;
@@ -257,7 +257,7 @@ main {
   height: 95%;
   object-fit: cover;
   object-position: center;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .container-side .content-1 {
   grid-area: content-1;
@@ -570,6 +570,82 @@ footer .icons a .fa-linkedin:hover {
   main .container-side .content-10 p,
   main .container-side .content-12 p {
     font-size: 2rem;
+  }
+  aside img {
+    object-fit: cover;
+  }
+  .container-imprint {
+    text-align: left;
+    width: 70%;
+  }
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .icons:nth-child(1) {
+    order: 2;
+    width: 50%;
+  }
+  .imprint:nth-child(2) {
+    order: 3;
+    width: 25%;
+  }
+  .copyright:nth-child(3) {
+    order: 1;
+    width: 25%;
+  }
+  .imprint {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1080px) {
+  main {
+    padding: 5rem 10rem 15rem 10rem;
+  }
+  main .container {
+    padding-top: 7rem;
+    grid-template-rows: repeat(3, 50rem);
+  }
+  main .container h2 {
+    font-size: 4rem;
+  }
+  main .container .content-1 h1 {
+    font-size: 5rem;
+  }
+  main .container .content-1 h3 {
+    font-size: 3.5rem;
+  }
+  main .container .content-1 p {
+    font-size: 2.5rem;
+  }
+  main .container .content-2 p,
+  main .container .content-4 p {
+    font-size: 2.5rem;
+  }
+  main .container-side {
+    padding-top: 7rem;
+    grid-template-rows: repeat(7, 50rem);
+  }
+  main .container-side h2 {
+    font-size: 4rem;
+  }
+  main .container-side .content-1 h1 {
+    font-size: 5rem;
+  }
+  main .container-side .content-1 h3 {
+    font-size: 3.5rem;
+  }
+  main .container-side .content-1 p {
+    font-size: 2.5rem;
+  }
+  main .container-side .content-2 p,
+  main .container-side .content-4 p,
+  main .container-side .content-6 p,
+  main .container-side .content-8 p,
+  main .container-side .content-10 p,
+  main .container-side .content-12 p {
+    font-size: 2.5rem;
   }
   aside img {
     object-fit: cover;
